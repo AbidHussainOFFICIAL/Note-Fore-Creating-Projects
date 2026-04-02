@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agency Site Setup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">AI Agency Starter</p>
+        <h1>Build your AI agency site with Next.js + Shadcn UI</h1>
+        <p class="subtitle">A polished installation guide for a modern AI landing page using Tailwind, App Router, Shadcn UI, and recommended packages.</p>
+        <div class="hero-actions">
+          <a href="#quick-start" class="btn btn-primary">Quick Start</a>
+          <a href="#tools" class="btn btn-secondary">Tech Stack</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-title">Pro setup checklist</p>
+        <ul>
+          <li>ESLint enabled</li>
+          <li>Tailwind CSS installed</li>
+          <li>App Router enabled</li>
+          <li>src/ directory</li>
+          <li>@/* alias configured</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="page-nav">
+      <a href="#quick-start">Quick Start</a>
+      <a href="#shadcn">Shadcn UI</a>
+      <a href="#packages">Packages</a>
+      <a href="#tools">Toolset</a>
+      <a href="#notes">Notes</a>
+    </nav>
+
+    <section id="quick-start" class="section-grid">
+      <article class="card">
+        <h2>Quick start</h2>
+        <p>Scaffold the Next.js project with recommended defaults.</p>
+        <pre><code>npx create-next-app@latest ai-agency-site</code></pre>
+      </article>
+      <article class="card accent-card">
+        <h2>Setup options</h2>
+        <ul>
+          <li>ESLint: Yes</li>
+          <li>Tailwind CSS: Yes</li>
+          <li>src/ directory: Yes</li>
+          <li>App Router: Yes</li>
+          <li>Alias (@/*): Yes</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="shadcn" class="section-card">
+      <h2>Shadcn UI setup</h2>
+      <p>Initialize Shadcn UI immediately after project creation to add components and design tokens.</p>
+      <pre><code>npx shadcn@latest init</code></pre>
+      <p>Choose these options during the CLI prompt:</p>
+      <ul>
+        <li><strong>Style:</strong> Default</li>
+        <li><strong>Base color:</strong> Slate or Zinc</li>
+        <li><strong>Use CSS variables for colors:</strong> Yes</li>
+      </ul>
+      <p>Then add your first components, such as buttons, cards, and forms:</p>
+      <pre><code>npx shadcn@latest add button card input badge</code></pre>
+    </section>
+
+    <section id="packages" class="section-grid">
+      <article class="card">
+        <h2>Recommended packages</h2>
+        <pre><code>npm install framer-motion firebase lucide-react cloudinary</code></pre>
+      </article>
+      <article class="card">
+        <h2>Dev tooling</h2>
+        <pre><code>npm install -D prettier eslint-config-prettier eslint-plugin-simple-import-sort eslint-plugin-tailwindcss</code></pre>
+      </article>
+    </section>
+
+    <section id="installations" class="section-card">
+      <h2>Complete installations</h2>
+      <ul>
+        <li>Project scaffolded with `create-next-app`</li>
+        <li>Shadcn UI initialized and configured</li>
+        <li>UI components added via `shadcn add`</li>
+        <li>Animation, icons, Firebase, and Cloudinary installed</li>
+        <li>Formatting and lint tooling installed</li>
+      </ul>
+    </section>
+
+    <section id="tools" class="section-card">
+      <h2>Project toolkit</h2>
+      <div class="tool-grid">
+        <div class="tool-item">
+          <h3>Next.js</h3>
+          <p>Server Actions, App Router, and fast rendering.</p>
+        </div>
+        <div class="tool-item">
+          <h3>Tailwind CSS</h3>
+          <p>Utility-first styling for fast UI iteration.</p>
+        </div>
+        <div class="tool-item">
+          <h3>Shadcn UI</h3>
+          <p>Component-driven design with accessible primitives.</p>
+        </div>
+        <div class="tool-item">
+          <h3>Alias imports</h3>
+          <p>Use <code>@/*</code> for cleaner paths inside <code>src/</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes" class="section-card">
+      <h2>Recommended workflow</h2>
+      <ol>
+        <li>Create the project.</li>
+        <li>Run Shadcn UI init.</li>
+        <li>Install recommended packages.</li>
+        <li>Develop components in <code>src/</code>.</li>
+        <li>Start the app with <code>npm run dev</code>.</li>
+      </ol>
+      <p class="footnote">Open <code>http://localhost:3000</code> to preview as you build.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Saved in <code>/website</code> as an upgraded project onboarding site.</p>
+    </div>
+  </footer>
+</body>
+</html>

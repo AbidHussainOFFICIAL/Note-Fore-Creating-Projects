@@ -18,6 +18,20 @@ During the setup wizard, make sure to select these options:
 - `Would you like to use App Router? (recommended)` Yes (This gives you Server Actions)
 - `Would you like to customize the default import alias (@/*)?` Yes (The default @/* is perfect)
 
+## Shadcn UI Setup
+
+Run the Shadcn UI initializer after creating the app:
+
+```bash
+npx shadcn@latest init
+```
+
+During the CLI setup, configure the `components.json` options like this:
+
+- `Style:` Default
+- `Base color:` Slate or Zinc are great defaults for a clean look.
+- `Do you want to use CSS variables for colors?` Yes
+
 ## After Setup
 
 1. Change into the new project folder:
@@ -26,13 +40,31 @@ During the setup wizard, make sure to select these options:
 cd ai-agency-site
 ```
 
-2. Start the development server:
+2. Install recommended UI and integration packages:
+
+```bash
+npm install framer-motion firebase lucide-react cloudinary
+```
+
+3. Install useful dev tooling:
+
+```bash
+npm install -D prettier eslint-config-prettier eslint-plugin-simple-import-sort eslint-plugin-tailwindcss
+```
+
+4. Add common Shadcn UI components:
+
+```bash
+npx shadcn@latest add button card input badge
+```
+
+5. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-3. Open the project in the browser at:
+6. Open the project in the browser:
 
 ```text
 http://localhost:3000
@@ -51,6 +83,26 @@ npm install
 - App Router gives you access to Server Actions and modern Next.js routing patterns.
 
 - The default alias `@/*` works well for clean absolute imports from the `src/` folder.
+
+- Use `prettier` alongside ESLint to keep code formatting consistent.
+
+- Firebase can be used for auth, Firestore, or storage while Cloudinary is great for hosted media assets.
+
+## Shadcn UI Notes
+
+After `npx shadcn@latest init`, add initial components that match your landing page layout. Common first components include:
+
+- `button`
+- `card`
+- `input`
+- `badge`
+- `popover`
+
+You can add more UI pieces later with:
+
+```bash
+npx shadcn@latest add button card input badge
+```
 
 ## Recommended Next Steps
 
